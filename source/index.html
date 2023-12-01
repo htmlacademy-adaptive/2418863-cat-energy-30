@@ -17,18 +17,23 @@
         <div class="header__flex-wrapper">
           <a class="header__logo logo" href="index.html">
             <picture>
+              <source media="(min-width: 1440px)" srcset="images/header/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="images/header/logo-tablet.svg">
               <img class="logo__image" width="34" height="38" src="images/header/logo-mobile.svg" alt="Logo Cat Energy.">
             </picture>
           </a>
 
           <a class="header__logo-main logo-main" href="#">
-
-            <img class="logo-main__image"  width="101" height="18" src="images/header/logo-text.svg" alt="Logo with text Cat Energy.">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="images/header/logo-text-desktop.svg">
+              <source media="(min-width: 768px)" srcset="images/header/logo-text-tablet.svg">
+              <img class="logo-main__image"  width="101" height="18" src="images/header/logo-text.svg" alt="Logo with text Cat Energy.">
+            </picture>
           </a>
         </div>
 
         <nav class="main-nav">
-          <button class="main-nav__toggle main-nav__toggle--closed">
+          <button class="main-nav__toggle main-nav__toggle--closed" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
 
@@ -54,7 +59,12 @@
               <h1 class="promo__title">Функциональное<br> питание для котов</h1>
               <p class="promo__slogan">Занялся собой? Займись котом!</p>
             </div>
-            <img class="promo__image" src="images/promo/index-can.png" width="280" height="270" alt="Стакан корма с курицей.">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="images/index/promo-image-desktop.png 1x, images/index/promo-image-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="images/index/promo-image-tablet.png 1x, images/index/promo-image-tablet@2x.png 2x">
+              <img class="promo__image" src="images/index/promo-image-mobile.png" srcset="images/index/promo-image-mobile@2x.png 2x" width="280" height="270" alt="Стакан корма с курицей.">
+            </picture>
+
             <div class="promo__button-wrapper">
               <a class="promo__link-button" href="#">Подобрать программу</a>
             </div>
@@ -156,8 +166,15 @@
               <p class="contacts__address">ул. Большая Конюшенная, д. 19/8
                 Санкт-Петербург</p>
             </div>
+            <picture>
+              <source media="(min-width: 1440px)" srcset="images/contacts/map-tablet.png 1x, images/contacts/map-tablet@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="images/contacts/map-tablet.png 1x, images/contacts/map-tablet@2x.png 2x">
+              <img class="contacts__image" src="images/contacts/map-mobile.png" srcset="images/contacts/map-mobile@2x.png 2x" width="320" height="362" alt="Карта.">
+            </picture>
+
+            <!--
             <iframe id="inlineFrameExample" title="Inline Frame Map" width="100%"
-            height="400"  allowfullscreen="true"  src="https://yandex.ru/map-widget/v1/-/CBFkaYSE0A" frameborder="0"></iframe>
+            height="400"  allowfullscreen="true"  src="https://yandex.ru/map-widget/v1/-/CBFkaYSE0A" frameborder="0"></iframe>-->
           </div>
         </section>
       </main>
