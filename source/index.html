@@ -136,10 +136,15 @@
 
             <div class="example__slider-images">
               <div class="example__wrapper-images">
-                <img class="example__after" width="280" height="232" src="images/programs/before-mobile.png" alt="Фото кота до похудения">
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="images/example/slider-tablet.png 1x, images/example/slider-tablet@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="images/example/slider-tablet.png 1x, images/example/slider-tablet@2x.png 2x">
+                  <img class="promo__image" src="images/example/slider-mobile.png" srcset="images/example/slider-mobile.png 2x" width="280" height="256" alt="Слайдер кота.">
+                </picture>
+
               </div>
               <div class="example__wrapper-images">
-                <img class="example__before" src="" alt="">
+                <img class="example__before" src="#" alt="">
               </div>
             </div>
 
