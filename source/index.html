@@ -4,27 +4,36 @@
     <meta charset="UTF-8">
     <title>Название проекта</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/32.png" >
+    <link rel="apple-touch-icon" href="favicons/apple180.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="styles/styles.css">
+
     <script src="scripts/index.js" defer></script>
   </head>
   <body class="page__body">
-    <div class="page-body__container">
+    <div class="page__container">
       <header class="header">
         <div class="header__flex-wrapper">
           <a class="header__logo logo" href="index.html">
             <picture>
+              <source media="(min-width: 1440px)" srcset="images/header/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="images/header/logo-tablet.svg">
               <img class="logo__image" width="34" height="38" src="images/header/logo-mobile.svg" alt="Logo Cat Energy.">
             </picture>
           </a>
 
           <a class="header__logo-main logo-main" href="#">
-
-            <img class="logo-main__image"  width="101" height="18" src="images/header/logo-text.svg" alt="Logo with text Cat Energy.">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="images/header/logo-text-desktop.svg">
+              <source media="(min-width: 768px)" srcset="images/header/logo-text-tablet.svg">
+              <img class="logo-main__image"  width="101" height="18" src="images/header/logo-text.svg" alt="Logo with text Cat Energy.">
+            </picture>
           </a>
         </div>
 
         <nav class="main-nav">
-          <button class="main-nav__toggle main-nav__toggle--closed">
+          <button class="main-nav__toggle main-nav__toggle--closed" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
 
@@ -50,7 +59,12 @@
               <h1 class="promo__title">Функциональное<br> питание для котов</h1>
               <p class="promo__slogan">Занялся собой? Займись котом!</p>
             </div>
-            <img class="promo__image" src="images/promo/index-can.png" width="280" height="270" alt="Стакан корма с курицей.">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="images/index/promo-image-desktop.png 1x, images/index/promo-image-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="images/index/promo-image-tablet.png 1x, images/index/promo-image-tablet@2x.png 2x">
+              <img class="promo__image" src="images/index/promo-image-mobile.png" srcset="images/index/promo-image-mobile@2x.png 2x" width="280" height="270" alt="Стакан корма с курицей.">
+            </picture>
+
             <div class="promo__button-wrapper">
               <a class="promo__link-button" href="#">Подобрать программу</a>
             </div>
@@ -122,14 +136,19 @@
 
             <div class="example__slider-images">
               <div class="example__wrapper-images">
-                <img class="example__after" width="280" height="232" src="images/programs/before-mobile.png" alt="Фото кота до похудения">
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="images/example/slider-tablet.png 1x, images/example/slider-tablet@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="images/example/slider-tablet.png 1x, images/example/slider-tablet@2x.png 2x">
+                  <img class="example__image" src="images/example/slider-mobile.png" srcset="images/example/slider-mobile.png 2x" width="280" height="256" alt="Слайдер кота.">
+                </picture>
+
               </div>
               <div class="example__wrapper-images">
-                <img class="example__before" src="" alt="">
+                <img class="example__before" src="#" alt="">
               </div>
             </div>
 
-            <div class="example__range">
+            <div class="example__range range">
               <button class="range__toggle" type="button">
                 <span class="range__toggle-lable">Было</span>
               </button>
@@ -152,8 +171,15 @@
               <p class="contacts__address">ул. Большая Конюшенная, д. 19/8
                 Санкт-Петербург</p>
             </div>
-            <iframe id="inlineFrameExample" title="Inline Frame Map" width="100%"
-            height="400"  allowfullscreen="true"  src="https://yandex.ru/map-widget/v1/-/CBFkaYSE0A" frameborder="0"></iframe>
+            <picture>
+              <source media="(min-width: 1440px)" srcset="images/contacts/map-tablet.png 1x, images/contacts/map-tablet@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="images/contacts/map-tablet.png 1x, images/contacts/map-tablet@2x.png 2x">
+              <img class="contacts__image" src="images/contacts/map-mobile.png" srcset="images/contacts/map-mobile@2x.png 2x" width="320" height="362" alt="Карта.">
+            </picture>
+
+            <!--
+            <iframe id="inlineFrameExample" title="Inline Frame Map" width="100"
+            height="400"  allowfullscreen="true"  src="https://yandex.ru/map-widget/v1/-/CBFkaYSE0A" frameborder="0"></iframe>-->
           </div>
         </section>
       </main>
@@ -176,7 +202,6 @@
                 <path id="Vector_9" d="M119.989 15.4212L115.082 0.408447H118.086L121.591 11.6425L124.996 0.408447H128L123.093 15.4212V23.5914H120.089V15.4212H119.989Z" fill="#111111"/>
                 </g>
                 </svg>
-
             </a>
           </div>
           <div class="page__footer-socials socials">
@@ -184,19 +209,19 @@
               <li class="social-item">
                 <a class="social-link" href="#">
                   <span class="visually-hidden"> VK</span>
-                 <!-- SVG-->
-                 VK</a>
+                  <!-- SVG-->
+                  VK</a>
               </li>
               <li class="social-item">
                 <a class="social-link" href="#">
-                   <span class="visually-hidden">Youtube</span>
-                 <!-- SVG-->
-                 Youtube</a>
+                  <span class="visually-hidden">Youtube</span>
+                  <!-- SVG-->
+                  Youtube</a>
               </li>
               <li class="social-item">
                 <a class="social-link" href="#">
                   <span class="visually-hidden"> Telegram</span>
-                 <!-- SVG-->
+                  <!-- SVG-->
                   Telegram</a>
               </li>
             </ul>
@@ -204,7 +229,7 @@
           <div class="page-footer-logo logo-akademy">
             <a class="logo-akademy-link logo-akademy_copyright" href="#">HTML Akademy</a>
             <a class="logo-akademy-link" href="#">LOGO</a>
-             <!-- SVG-->
+            <!-- SVG-->
           </div>
         </div>
       </footer>

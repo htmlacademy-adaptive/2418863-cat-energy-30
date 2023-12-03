@@ -8,7 +8,7 @@
     <script src="scripts/index.js" defer></script>
   </head>
   <body class="page__body">
-    <div class="page-body__container">
+    <div class="page__container">
       <header class="header">
         <div class="header__flex-wrapper">
           <a class="header__logo logo" href="index.html">
@@ -24,7 +24,7 @@
         </div>
 
         <nav class="main-nav">
-          <button class="main-nav__toggle">
+          <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
 
@@ -44,9 +44,9 @@
 
       <main class="page-main">
         <div class="container wrapper">
-          <h1 class="page-main__title page-main">Подбор программы</h1>
-           <p class="page-main__text">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
-      </div>
+          <h1 class="page-main__title">Подбор программы</h1>
+          <p class="page-main__text">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
+        </div>
 
 
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
@@ -87,7 +87,7 @@
           </div>
 
           <fieldset class="form__module form__module--adress">
-           <legend class=""><span>Контактные данные&nbsp;<br>(владельца кота)</span></legend>
+            <legend class=""><span>Контактные данные&nbsp;<br>(владельца кота)</span></legend>
             <div class="container">
               <div class="form__module-adress-wrapper">
                 <p class="form__field field-text field-text--email">
@@ -104,9 +104,9 @@
 
           <fieldset class="form__module form__module--comment">
             <div class="container">
-              <legend class="form__legend">Комментарий</legend>
+              <h3 class="form__legend"><span>Комментарий</span></h3>
               <p class="field-text field-text--textarea">
-                <label class="field-text__label field-text__label" for="comment" aria-label="Комментарий"></label>
+                <label class="field-text__label field-text__label" for="comment" aria-label="Комментарий">Комментарий</label>
                 <textarea class="field-text__input" name="comment" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
               </p>
             </div>
@@ -114,7 +114,7 @@
 
           <fieldset class="form__module form__module--extra">
             <div class="container">
-              <legend class="form__legend">Дополнительно</legend>
+              <h3 class="form__legend"><span>Дополнительно</span></h3>
               <div class="form__module-extra-wrapper">
                 <p class="form__field  field-checkbox">
                   <input class="field-checkbox__input visually-hidden" type="checkbox" name="sugar" id="sugar" checked>
@@ -155,8 +155,9 @@
               <p class="contacts__address">ул. Большая Конюшенная, д. 19/8
                 Санкт-Петербург</p>
             </div>
-            <iframe id="inlineFrameExample" title="Inline Frame Map" width="100%"
-            height="400"  allowfullscreen="true"  src="https://yandex.ru/map-widget/v1/-/CBFkaYSE0A" frameborder="0"></iframe>
+            <!--
+            <iframe id="inlineFrameExample" title="Inline Frame Map" width="100"
+            height="400"  allowfullscreen="true"  src="https://yandex.ru/map-widget/v1/-/CBFkaYSE0A" frameborder="0"></iframe>-->
           </div>
         </section>
       </main>
@@ -188,19 +189,19 @@
               <li class="social-item">
                 <a class="social-link" href="#">
                   <span class="visually-hidden"> VK</span>
-                 <!-- SVG-->
-                 VK</a>
+                  <!-- SVG-->
+                  VK</a>
               </li>
               <li class="social-item">
                 <a class="social-link" href="#">
-                   <span class="visually-hidden">Youtube</span>
-                 <!-- SVG-->
-                 Youtube</a>
+                  <span class="visually-hidden">Youtube</span>
+                  <!-- SVG-->
+                  Youtube</a>
               </li>
               <li class="social-item">
                 <a class="social-link" href="#">
                   <span class="visually-hidden"> Telegram</span>
-                 <!-- SVG-->
+                  <!-- SVG-->
                   Telegram</a>
               </li>
             </ul>
@@ -208,7 +209,7 @@
           <div class="page-footer-logo logo-akademy">
             <a class="logo-akademy-link logo-akademy_copyright" href="#">HTML Akademy</a>
             <a class="logo-akademy-link" href="#">LOGO</a>
-             <!-- SVG-->
+            <!-- SVG-->
           </div>
         </div>
       </footer>
