@@ -38,12 +38,13 @@
         </nav>
       </header>
       <main class="page-main">
-        <div class="container wrapper">
+        <section>
+
+        </section>
           <h1 class="page-main__title">Подбор программы</h1>
           <p class="page-main__text">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
-        </div>
+
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
-          <div class="container form__flex-container">
             <fieldset class="form__module form__module--info">
               <legend class="visually-hidden">Заполните параметры</legend>
               <p class="form__field  field-text">
@@ -74,13 +75,11 @@
                   <input class="field-radio__input visually-hidden" type="radio" name="selection" id="advice" value="advice">
                   <label class="field-radio__label" for="advice">Не знаю (нужен ваш совет)</label>
                 </p>
-              </div>
             </fieldset>
           </div>
-          <fieldset class="form__module form__module--adress">
+          <fieldset class="form__module form__module--address">
             <legend class="form__legend"><span>Контактные данные&nbsp;<br>(владельца кота)</span></legend>
             <div class="container">
-              <div class="form__module-adress-wrapper">
                 <p class="form__field field-text field-text--email">
                   <label class="field-text__label" for="e-mail">E-mail:*</label>
                   <input class="field-text__input" type="email" name="e-mail" id="e-mail" placeholder="kuklachev@gmail.com" required>
@@ -89,11 +88,10 @@
                   <label class="field-text__label" for="telephone">Телефон:*</label>
                   <input class="field-text__input field-text__input-tel" type="tel" name="telephone" id="telephone" placeholder="8 (960) 900-60-90" required>
                 </p>
-              </div>
             </div>
           </fieldset>
           <fieldset class="form__module form__module--comment">
-            <legend class="visually-hidden">Комментарии</legend>
+            <legend class="visually-hidden">Комментарий</legend>
             <div class="form__module-container">
               <h3 class="form__legend"><span>Комментарий</span></h3>
               <p class="field-text field-text--textarea">
@@ -108,29 +106,27 @@
               <h3 class="form__legend"><span>Дополнительно</span></h3>
               <div class="form__module-extra-wrapper">
                 <p class="form__field  field-checkbox">
-                  <input class="field-checkbox__input visually-hidden" type="checkbox" name="sugar" id="sugar" checked>
+                  <input class="field-checkbox__input " type="checkbox" name="sugar" id="sugar" checked>
                   <label class="field-checkbox__label" for="sugar">Сахарозаменитель</label>
                 </p>
                 <p class="form__field  field-checkbox">
-                  <input class="field-checkbox__input visually-hidden" type="checkbox" name="water" id="water">
+                  <input class="field-checkbox__input" type="checkbox" name="water" id="water">
                   <label class="field-checkbox__label" for="water">Питьевая вода</label>
                 </p>
                 <p class="form__field  field-checkbox">
-                  <input class="field-checkbox__input visually-hidden" type="checkbox" name="milk" id="milk">
+                  <input class="field-checkbox__input" type="checkbox" name="milk" id="milk">
                   <label class="field-checkbox__label" for="milk">Молоко</label>
                 </p>
                 <p class="form__field  field-checkbox">
-                  <input class="field-checkbox__input visually-hidden" type="checkbox" name="vitamins" id="vitamins">
+                  <input class="field-checkbox__input" type="checkbox" name="vitamins" id="vitamins">
                   <label class="field-checkbox__label" for="vitamins">Витамины</label>
                 </p>
               </div>
             </div>
           </fieldset>
           <div class="form__submit field-submit">
-            <div class="container form__submit-container">
               <button class="form__button field-submit__button button" type="submit">Отправить заявку</button>
-              <p class="field-submit__note"><sup>*</sup> — Обязательные поля</p>
-            </div>
+              <p class="field-submit__note">* — Обязательные поля</p>
           </div>
         </form>
         <section class="contacts">
@@ -172,19 +168,16 @@
               <li class="social-item">
                 <a class="social-link" href="#">
                   <span class="visually-hidden">VK</span>
-                  <!-- SVG-->
                   </a>
               </li>
               <li class="social-item">
                 <a class="social-link" href="#">
                   <span class="visually-hidden">Youtube</span>
-                  <!-- SVG-->
                   Youtube</a>
               </li>
               <li class="social-item">
                 <a class="social-link" href="#">
                   <span class="visually-hidden">Telegram</span>
-                  <!-- SVG-->
                   Telegram</a>
               </li>
             </ul>
@@ -192,7 +185,7 @@
           <div class="page-footer-logo logo-akademy">
             <a class="logo-akademy-link logo-akademy_copyright" href="#">HTML Akademy</a>
             <a class="logo-akademy-link" href="#">LOGO</a>
-            <!-- SVG-->
+
           </div>
         </div>
       </footer>
