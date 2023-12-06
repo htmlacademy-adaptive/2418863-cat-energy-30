@@ -2,7 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="UTF-8">
-    <title>Название проекта</title>
+    <title>Cat energy</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="styles/styles.css">
     <script src="scripts/index.js" defer></script>
@@ -10,7 +10,6 @@
   <body class="page__body">
     <div class="page__container">
       <header class="header">
-        <div class="header__flex-wrapper">
           <a class="header__logo logo" href="index.html">
             <picture>
               <img class="logo__image" width="34" height="38" src="images/header/logo-mobile.svg" alt="Logo Cat Energy.">
@@ -19,8 +18,7 @@
           <a class="header__logo-main logo-main" href="#">
             <img class="logo-main__image"  width="101" height="18" src="images/header/logo-text.svg" alt="Logo with text Cat Energy.">
           </a>
-        </div>
-        <nav class="main-nav">
+         <nav class="main-nav">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -35,16 +33,14 @@
                 <a class="main-nav__link" href="form.html">Подбор программы</a>
               </li>
             </ul>
-        </nav>
+         </nav>
       </header>
       <main class="page-main">
-        <section>
-
-        </section>
+        <section class="form">
           <h1 class="page-main__title">Подбор программы</h1>
           <p class="page-main__text">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
 
-      <form class="form" action="https://echo.htmlacademy.ru" method="post">
+          <form class="form" action="https://echo.htmlacademy.ru" method="post">
             <fieldset class="form__module form__module--info">
               <legend class="visually-hidden">Заполните параметры</legend>
               <p class="form__field  field-text">
@@ -91,17 +87,15 @@
             </div>
           </fieldset>
           <fieldset class="form__module form__module--comment">
-            <legend class="visually-hidden">Комментарий</legend>
             <div class="form__module-container">
-              <h3 class="form__legend"><span>Комментарий</span></h3>
+              <h3 class="form__legend">Комментарий</h3>
               <p class="field-text field-text--textarea">
-                <label class="field-text__label" for="comment" aria-label="Комментарий">Комментарий</label>
+                <label class="field-text__label" for="comment" aria-label="Комментарий"></label>
                 <textarea class="field-text__input" name="comment" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
               </p>
             </div>
           </fieldset>
           <fieldset class="form__module form__module--extra">
-            <legend class="visually-hidden">Дополнительно</legend>
             <div class="form__module-container">
               <h3 class="form__legend"><span>Дополнительно</span></h3>
               <div class="form__module-extra-wrapper">
@@ -128,7 +122,8 @@
               <button class="form__button field-submit__button button" type="submit">Отправить заявку</button>
               <p class="field-submit__note">* — Обязательные поля</p>
           </div>
-        </form>
+         </form>
+        </section>
         <section class="contacts">
           <h2 class="visually-hidden">Контакты</h2>
           <div class="contacts__wrapper">
@@ -182,9 +177,9 @@
               </li>
             </ul>
           </div>
-          <div class="page-footer-logo logo-akademy">
-            <a class="logo-akademy-link logo-akademy_copyright" href="#">HTML Akademy</a>
-            <a class="logo-akademy-link" href="#">LOGO</a>
+          <div class="page-footer-logo logo-aсademy">
+            <a class="logo-aсademy-link logo-aсademy_copyright" href="#">HTML Aсademy</a>
+            <a class="logo-aсademy-link" href="#">LOGO</a>
 
           </div>
         </div>
