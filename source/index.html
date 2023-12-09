@@ -47,10 +47,10 @@
             <div class="promo__text-wrapper">
               <h1 class="promo__title">Функциональное<br> питание для котов</h1>
               <p class="promo__slogan">Занялся собой? Займись котом!</p>
-            </div><!--
+            </div>
             <picture>
-              <source media="(min-width: 1440px)" srcset="images/index/promo-image-desktop.png 1x, images/index/promo-image-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="images/index/promo-image-tablet.png 1x, images/index/promo-image-tablet@2x.png 2x">-->
+              <source type="image/png" media="(min-width: 1440px)" srcset="images/index/promo-image-desktop.png 1x, images/index/promo-image-desktop@2x.png 2x" width="552" height="449">
+              <source type="image/png" media="(min-width: 768px)" srcset="images/index/promo-image-tablet.png 1x, images/index/promo-image-tablet@2x.png 2x" width="709" height="609">
               <img class="promo__image" src="images/index/promo-image-mobile.png" srcset="images/index/promo-image-mobile@2x.png 2x" width="280" height="270" alt="Стакан корма с курицей.">
             </picture>
             <div class="promo__button-wrapper">
@@ -98,39 +98,36 @@
         </section>
         <section class="example">
           <div class="example__container">
-
-            <div class="example__info-inner">
-              <h2 class="example__title page__title">Живой пример</h2>
-              <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без&nbsp;изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-              <dl class="example__list ">
-                <div class="example__item">
-                  <dt class="example__value">Cнижение веса</dt>
-                  <dd class="example__key">5 кг</dd>
+            <div class="example__stats">
+              <dl  class="example__stats-list">
+                <div class="example__stats-item">
+                  <dt  class="example__stats-number">
+                    5 <span aria-hidden="true">кг</span>
+                    <span class="visually-hidden">килограмм</span></dt>
+                  <dd  class="example__stats-description">Снижение веса</dd>
                 </div>
-                <div class="example__item">
-                  <dt class="example__value">Затрачено времени</dt>
-                  <dd class="example__key">60 дней</dd>
+                <div class="example__stats-item">
+                  <dt class="example__stats-number">60 дней</dt>
+                  <dd class="example__stats-description">Затрачено времени</dd>
                 </div>
               </dl>
-              <dl class="example__total">
-                <dt class="example__total--value">Затраты на питание:</dt>
-                <dd class="example__total--key">15 000 руб.</dd>
-              </dl>
+              <p class="example__stats-expenses">Затраты на питание:<span class="example__stats-expenses-value">15000</span> <span aria-hidden="true">руб.</span>
+                <span class="visually-hidden">рублей</span>
+              </p>
             </div>
 
 
-
             <div class="example__slider-images">
-              <div class="example__figure"><!--
-                <picture>
-                  <source media="(min-width: 1440px)" srcset="images/example/slider-tablet.png 1x, images/example/slider-tablet@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="images/example/slider-tablet.png 1x, images/example/slider-tablet@2x.png 2x">
-                  <img class="example__image" src="images/example/slider-mobile.png" srcset="images/example/slider-mobile.png 2x" width="280" height="256" alt="Кот после программы.">
-                </picture>-->
-              </div>
               <div class="example__figure">
-                <img class="example__image" width="280" height="256" src="images/example/slider-mobile.png" alt="Кот после программы">
-              </div>
+                <picture>
+                  <source type="image/png"  media="(min-width: 768px)" srcset="images/example/tablet-cat-before.png 1x, images/example/tablet-cat-before@2x.png 2x" width="560" height="512">
+                  <img class="example__image" width="280" height="256" src="images/example/mobile-cat-before.png" srcset="images/example/mobile-cat-before@2x.png 2x" alt="Кот после программы">
+                </picture>
+                <picture>
+                  <source type="image/png"  media="(min-width: 768px)" srcset="images/example/tablet-cat-after.png 1x, images/example/tablet-cat-after@2x.png 2x" width="560" height="512">
+                  <img class="example__image" width="280" height="256" src="images/example/mobile-cat-after.png" srcset="images/example/mobile-cat-after@2x.png 2x" alt="Кот после программы">
+                </picture>
+              </div>>
             </div>
             <div class="example__range range">
               <label class="range__scale">
@@ -162,7 +159,7 @@
         <div class="page-footer__wrapper">
           <div class="page-footer__text">
             <a class="page-footer__link" href="#">
-              <span class="visually-hidden">Cat Energy</span>
+              <img class="logo__text"  width="101" height="18" src="images/header/logo-text.svg" alt="Текcтовый логотип Cat energy.">
             </a>
           </div>
             <ul class="socials">
@@ -182,10 +179,12 @@
                  </a>
               </li>
             </ul>
-          <div class="page__footer-logo logo-aсademy">
-            <a class="logo-aсademy-link__copyright" href="#">HTML Aсademy</a>
-            <a class="logo-aсademy-link__logo" href="#">LOGO</a>
-          </div>
+            <div class="page-footer__copyright">
+              <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+                <span class="page-footer__copyright-text">HTML Academy</span>
+                <img class="page-footer__copyright-logo" src="#" alt="Логотип HTML Academy" width="27" height="34">
+              </a>
+            </div>
         </div>
       </footer>
   </body>
