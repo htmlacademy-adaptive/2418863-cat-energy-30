@@ -9,14 +9,19 @@
   </head>
   <body class="page__body">
       <header class="header">
-          <a class="header__logo" href="index.html">
-            <picture>
-              <img class="header__logo-image" width="34" height="38" src="images/header/logo-mobile.svg" alt="Логотип с котом на жёлтом фоне.">
-            </picture>
-          </a>
-          <a class="header__logo-main logo-main" href="#">
-            <img class="logo-main__image"  width="101" height="18" src="images/header/logo-text.svg" alt="Текcтовый логотип Cat energy.">
-          </a>
+        <a class="header__logo logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1440px)"  srcset="images/header/logo-desktop.svg" type="image/svg+xml" width="70" height="59">
+            <source media="(min-width: 768px)" srcset="images/header/logo-tablet.svg" type="image/svg+xml" width="60" height="50">
+            <img class="logo__image" width="34" height="38" src="images/header/logo-mobile.svg" alt="Логотип с котом на жёлтом фоне.">
+          </picture>
+          <picture>
+            <source media="(min-width: 1440px)" srcset="images/header/logo-text-desktop.svg" type="image/svg+xml" width="118" height="21">
+            <source media="(min-width: 768px)" srcset="images/header/logo-text-tablet.svg" type="image/svg+xml" width="118" height="21">
+            <img class="logo__text"  width="101" height="18" src="images/header/logo-text.svg" alt="Текcтовый логотип Cat energy.">
+          </picture>
+        </a>
+
         <nav class="main-nav">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
@@ -44,7 +49,7 @@
                   <picture>
                     <source media="(min-width: 1440px)" srcset="images/catalog/chicken-small-desktop.png 1x, images/catalog/chicken-small-desktop@2x.png 2x" type="image/png"
               width="161" height="172">
-                    <source media="(min-width: 768px)" srcset="images/catalog/chicken-small-tablet.png 1x, images/catalog/chicken-small-tablet@2x.png 2x .png 2x" type="image/png" width="161"
+                    <source media="(min-width: 768px)" srcset="images/catalog/chicken-small-tablet.png 1x, images/catalog/chicken-small-tablet@2x.png 2x" type="image/png" width="161"
               height="172">
                     <img class="product__image" src="images/catalog/chicken-small-mobile.png" srcset="images/catalog/chicken-small-mobile@2x.png 2x" width="68" height="86" alt="Корм с курицей 500 грамм">
                   </picture>
@@ -241,7 +246,7 @@
               <p class="contacts__address">ул. Большая Конюшенная, д. 19/8
                 Санкт-Петербург</p>
             </div>
-            <iframe id="inlineFrameExample" title="Inline Frame Map" width="100"
+           <!-- <iframe  width="100"
             height="400"  allowfullscreen="true"  src="https://yandex.ru/map-widget/v1/-/CBFkaYSE0A" frameborder="0"></iframe>-->
           </div>
         </section>
@@ -270,10 +275,12 @@
                  </a>
               </li>
             </ul>
-          <div class="page__footer-logo logo-aсademy">
-            <a class="logo-aсademy-link__copyright" href="#">HTML Aсademy</a>
-            <a class="logo-aсademy-link__logo" href="#">LOGO</a>
-          </div>
+            <div class="page-footer__copyright">
+              <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+                <span class="page-footer__copyright-text">HTML Academy</span>
+                <img class="page-footer__copyright-logo" src="#" alt="Логотип HTML Academy" width="27" height="34">
+              </a>
+            </div>
         </div>
       </footer>
 
