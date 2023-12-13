@@ -1,3 +1,24 @@
 .example {
-background-color: #EAEAEA;
+  background-color: #eaeaea;
+}
+
+.example__title {
+  font-family: "Oswald";
+  font-weight: 400;
+  size: 36px;
+  line-height: 40px;
+}
+
+.example__stats-item {
+  font-family: "Oswald";
+  font-weight: 400;
+  size: 24px;
+  line-height: 24px;
+}
+
+.example__stats-expenses {
+  font-family: "Lato";
+  font-weight: 400;
+  size: 12px;
+  line-height: 12px;
 }
