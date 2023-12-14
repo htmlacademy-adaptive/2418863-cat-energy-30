@@ -3,26 +3,44 @@
 }
 
 .promo__title {
-  font-family: "Oswald";
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   size: 36px;
   line-height: 36px;
   color: #ffffff;
+  text-align: center;
 }
 
 .promo__slogan {
-  font-family: "Oswald";
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   size: 14px;
   line-height: 14px;
   color: #ffffff;
+  text-align: center;
 }
-
+/*
 .promo__button {
-  font-family: "Oswald";
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   size: 16px;
   line-height: 20px;
   text-decoration: none;
   color: #ffffff;
+}*/
+
+.promo__button {
+  display: block;
+  box-sizing: border-box;
+  min-height: 20px;
+  min-width: 40px;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #68b738;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
 }
