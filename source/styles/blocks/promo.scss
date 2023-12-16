@@ -1,9 +1,33 @@
 .promo {
-  background-color: #68b738;
+  margin-bottom: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: white;
+  background-image: url("../../images/index/index-background-mobile1.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: rgba(104, 183, 56, 0.85);
+
 }
 
+/*
+.promo__image::after{
+  position: absolute;
+  top: 1088px;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  display: block;
+  width: 100%;
+  height: 302px;
+  background-image:url("../../images/index/index-background-mobile1.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+}*/
+
+
 .promo__title {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family:  $primary-font;
   font-weight: 400;
   size: 36px;
   line-height: 36px;
@@ -12,7 +36,8 @@
 }
 
 .promo__slogan {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $primary-font;
+  $secondary-font: "Lato", sans-serif;
   font-weight: 400;
   size: 14px;
   line-height: 14px;
@@ -30,17 +55,19 @@
 }*/
 
 .promo__button {
-  display: block;
-  box-sizing: border-box;
-  min-height: 20px;
-  min-width: 40px;
-  font-family: inherit;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 400;
-  color: #ffffff;
-  background-color: #68b738;
-  text-transform: uppercase;
-  text-align: center;
-  text-decoration: none;
+display: block;
+width: 250px;
+font-weight: 400;
+ min-height: 40px;
+line-height: 20px;
+display: block;
+font-family: inherit;
+font-size: 16px;
+color: #ffffff;
+background-color: #68b738;
+text-align: center;
+text-transform: uppercase;
+font-style: normal;
+border: none;
+text-decoration: none;
 }
