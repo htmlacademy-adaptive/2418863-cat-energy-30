@@ -1,4 +1,4 @@
-.promo {
+.promo /*
   margin-bottom: 20px;
   font-weight: 400;
   text-align: center;
@@ -6,10 +6,18 @@
   background-image: url("../../images/index/index-background-mobile1.png");
   background-repeat: no-repeat;
   background-size: 100%;
-  background-color: rgba(104, 183, 56, 0.85);
+  background-color: rgba(104, 183, 56, 0.85);*/
+   {
+    background-image: linear-gradient(
+        rgba(104, 183, 56, 0.85) 60%,
+        rgba(104, 183, 56, 0.85) 60%,
 
-}
+      ),
+      url("../../images/index/index-background-mobile1.png");
+    background-repeat: no-repeat;
+  }
 
+  
 /*
 .promo__image::after{
   position: absolute;

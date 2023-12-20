@@ -13,8 +13,33 @@
 
 .advantages__text {
   font-family: "Lato", "Arial", sans-serif;
-
   font-weight: 400;
   size: 14px;
   line-height: 18px;
 }
+
+.advantages__item {
+  position: relative;
+  padding-left: 80px;
+  min-height: 60px;
+  margin-bottom: 20px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+
+
+  }
+
+}
+.advantages__item--leaf::before {
+  background-image: url("../../images/icons/stack.svg#icon-leaf");
+}
+
+.advantages__item--water::before {
+  background-image: url("../../images/icons/stack.svg#icon-water");
+}
+
