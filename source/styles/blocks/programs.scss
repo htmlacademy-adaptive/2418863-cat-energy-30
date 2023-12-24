@@ -23,7 +23,7 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: aquamarine;
+    background-color: rgba(104, 183, 56, 1);
   }
 
   &::after {
@@ -41,6 +41,16 @@
   left: 0;
 
 }
+
+.programs__title--fattening::after {
+  width: 67px;
+  height: 28px;
+  background-image: url("../../images/icons/stack.svg#cat-pro");
+  top: 0;
+  left: 0;
+
+}
+
 
 
 .programs__text {
